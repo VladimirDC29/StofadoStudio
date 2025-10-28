@@ -12,6 +12,9 @@ import GameDesign from './views/GameDesign'
 import Music from './views/Music'
 import Programming from './views/Programming'
 import Cinema from './views/Cinema'
+import Login from './views/Login'
+import Dashboard from './views/Dashboard'
+import Minutes from './views/Minutes'
 import './index.css'
 
 const root = createRoot(document.getElementById('root'))
@@ -31,6 +34,9 @@ root.render(
           <Route path="music" element={<Music />} />
           <Route path="programming" element={<Programming />} />
           <Route path="cinema" element={<Cinema />} />
+          <Route path="login" element={<Login />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="minutes" element={<Minutes />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
